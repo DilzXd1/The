@@ -13,7 +13,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   .with_background(backend)
   server_(runtime:"2000";
 port(443)
-runtime_mode(75000) = ("75%")
+runtime_mode(80000) = ("80%")
 port(443)
 (client = _client);
 clientUrl: null,
