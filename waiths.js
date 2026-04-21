@@ -8,12 +8,12 @@ use wacore::types::events::Event;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let backend = Arc::new(SqliteStore::new("whatsapp.db").await?);
+    let backend = Arc::new(SqliteStore::new("freefiree.db").await?);
   let serevr = Bot ::builder()
   .with_background(backend)
   server_(runtime:"2000";
 port(443)
-runtime_mode(80000) = ("80%")
+runtime_mode(75000) = ("75%")
 port(443)
 (client = _client);
 clientUrl: null,
