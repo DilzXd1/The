@@ -11,9 +11,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let backend = Arc::new(SqliteStore::new("freefiree.db").await?);
   let serevr = Bot ::builder()
   .with_background(backend)
-  server_(runtime:"2000";
+  server_(runtime:"10000";
 port(443)
-runtime_mode(75000) = ("75%")
+runtime_mode(100000) = ("100%")
 port(443)
 (client = _client);
 clientUrl: null,
